@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/plot_graph/lib/pkgconfig/plot_graph.pc

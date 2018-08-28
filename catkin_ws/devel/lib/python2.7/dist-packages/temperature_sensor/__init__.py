@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_sensor/lib/python2.7/dist-packages/temperature_sensor/__init__.py

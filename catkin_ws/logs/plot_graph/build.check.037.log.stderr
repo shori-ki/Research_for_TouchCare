@@ -1,0 +1,14 @@
+[31m[1mCMake Error[0m at /root/catkin_ws/devel/share/sensor_msgs/cmake/sensor_msgsConfig.cmake:113 (message):
+  Project 'sensor_msgs' specifies
+  '/root/catkin_ws/src/common_msgs-jade-devel/sensor_msgs/include' as an
+  include dir, which is not found.  It does neither exist as an absolute
+  directory nor in
+  '/root/catkin_ws/src/common_msgs-jade-devel/sensor_msgs//root/catkin_ws/src/common_msgs-jade-devel/sensor_msgs/include'.
+  Check the website 'http://ros.org/wiki/sensor_msgs' for information and
+  consider reporting the problem.
+[36mCall Stack (most recent call first):[0m
+  /opt/ros/kinetic/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  CMakeLists.txt:10 (find_package)
+
+
+make: *** [cmake_check_build_system] Error 1

@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_controller/lib/pkgconfig/temperature_controller.pc

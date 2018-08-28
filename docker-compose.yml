@@ -1,0 +1,33 @@
+version: "2"
+services:
+    ros:
+        image: research_for_touch_care_robot
+        build: ros
+        container_name: yuki-ki
+        environment:
+            - ROS_HOSTNAME=touch-care-host
+            - HOST_USER_ID=1000
+            - HOST_GROUP_ID=1000
+            # to transport X11 application window
+            - DISPLAY
+            - QT_X11_NO_MITSHM=1
+            # to connect raspberry pi
+            - "ROS_IP=163.221.126.218"
+        hostname: touch-care-host
+        ports:
+            #- "11345:11345/tcp"
+            - "11311:11311"
+        volumes:
+            # to use devices
+            - /dev:/dev
+            # to tansport X11 application (ex: xhost +local:root)
+            # to give docker the rights to access the X-Server
+            - /tmp/.X11-unix:/tmp/.X11-unix:rw
+            #- ~/.Xauthority:/root/.Xauthority:rw
+            # ros catkin dir
+            - ./catkin_ws:/root/catkin_ws
+        privileged: true
+        command:
+            - /bin/bash
+            - tail -f /dev/null
+        network_mode: host

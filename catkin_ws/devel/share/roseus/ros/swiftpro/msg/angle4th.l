@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/swiftpro/share/roseus/ros/swiftpro/msg/angle4th.l

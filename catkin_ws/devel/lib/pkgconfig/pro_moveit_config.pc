@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/pro_moveit_config/lib/pkgconfig/pro_moveit_config.pc

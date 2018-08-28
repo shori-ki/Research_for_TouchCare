@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_controller/share/common-lisp/ros/temperature_controller/msg/sendDataStamped.lisp

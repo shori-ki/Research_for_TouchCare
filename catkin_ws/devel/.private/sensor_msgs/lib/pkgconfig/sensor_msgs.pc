@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/sensor_msgs
+
+Name: sensor_msgs
+Description: Description of sensor_msgs
+Version: 1.12.6
+Cflags: -I/root/catkin_ws/devel/.private/sensor_msgs/include -I/root/catkin_ws/src/common_msgs-jade-devel/sensor_msgs/include
+Libs: -L/root/catkin_ws/devel/.private/sensor_msgs/lib 
+Requires: geometry_msgs message_runtime std_msgs

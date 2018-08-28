@@ -1,0 +1,68 @@
+[35m[1mScanning dependencies of target std_msgs_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target _swiftpro_generate_messages_check_deps_status[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target _swiftpro_generate_messages_check_deps_position[0m
+[35m[1mScanning dependencies of target _swiftpro_generate_messages_check_deps_SwiftproState[0m
+[35m[1mScanning dependencies of target _swiftpro_generate_messages_check_deps_angle4th[0m
+[35m[1mScanning dependencies of target std_msgs_generate_messages_py[0m
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_py
+[35m[1mScanning dependencies of target std_msgs_generate_messages_eus[0m
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _swiftpro_generate_messages_check_deps_SwiftproState
+[  0%] Built target _swiftpro_generate_messages_check_deps_status
+[  0%] Built target _swiftpro_generate_messages_check_deps_position
+[  0%] Built target _swiftpro_generate_messages_check_deps_angle4th
+[35m[1mScanning dependencies of target swiftpro_generate_messages_lisp[0m
+[35m[1mScanning dependencies of target swiftpro_generate_messages_eus[0m
+[35m[1mScanning dependencies of target swiftpro_generate_messages_cpp[0m
+[35m[1mScanning dependencies of target swiftpro_generate_messages_nodejs[0m
+[35m[1mScanning dependencies of target swiftpro_generate_messages_py[0m
+[  3%] [34m[1mGenerating Lisp code from swiftpro/angle4th.msg[0m
+[  6%] [34m[1mGenerating EusLisp code from swiftpro/position.msg[0m
+[ 10%] [34m[1mGenerating C++ code from swiftpro/position.msg[0m
+[ 13%] [34m[1mGenerating Lisp code from swiftpro/status.msg[0m
+[ 16%] [34m[1mGenerating Lisp code from swiftpro/position.msg[0m
+[ 20%] [34m[1mGenerating Javascript code from swiftpro/position.msg[0m
+[ 23%] [34m[1mGenerating Python from MSG swiftpro/position[0m
+[ 26%] [34m[1mGenerating Lisp code from swiftpro/SwiftproState.msg[0m
+[ 26%] Built target swiftpro_generate_messages_lisp
+[ 30%] [34m[1mGenerating Python from MSG swiftpro/SwiftproState[0m
+[ 33%] [34m[1mGenerating Javascript code from swiftpro/angle4th.msg[0m
+[ 36%] [34m[1mGenerating C++ code from swiftpro/SwiftproState.msg[0m
+[ 40%] [34m[1mGenerating Javascript code from swiftpro/SwiftproState.msg[0m
+[ 43%] [34m[1mGenerating C++ code from swiftpro/angle4th.msg[0m
+[ 46%] [34m[1mGenerating EusLisp code from swiftpro/SwiftproState.msg[0m
+[ 50%] [34m[1mGenerating EusLisp code from swiftpro/angle4th.msg[0m
+[ 53%] [34m[1mGenerating Javascript code from swiftpro/status.msg[0m
+[ 56%] [34m[1mGenerating Python from MSG swiftpro/angle4th[0m
+[ 60%] [34m[1mGenerating EusLisp code from swiftpro/status.msg[0m
+[ 63%] [34m[1mGenerating C++ code from swiftpro/status.msg[0m
+[ 70%] [34m[1mGenerating EusLisp manifest code for swiftpro[0m
+[ 70%] [34m[1mGenerating Python from MSG swiftpro/status[0m
+[ 70%] Built target swiftpro_generate_messages_nodejs
+[ 73%] [34m[1mGenerating Python msg __init__.py for swiftpro[0m
+[ 73%] Built target swiftpro_generate_messages_cpp
+[35m[1mScanning dependencies of target swiftpro_rviz_node[0m
+[35m[1mScanning dependencies of target swiftpro_read_node[0m
+[35m[1mScanning dependencies of target swiftpro_write_node[0m
+[35m[1mScanning dependencies of target swiftpro_moveit_node[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/swiftpro_read_node.dir/src/swiftpro_read_node.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/swiftpro_write_node.dir/src/swiftpro_write_node.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/swiftpro_moveit_node.dir/src/swiftpro_moveit_node.cpp.o[0m
+[ 86%] [32mBuilding CXX object CMakeFiles/swiftpro_rviz_node.dir/src/swiftpro_rviz_node.cpp.o[0m
+[ 86%] Built target swiftpro_generate_messages_py
+[ 86%] Built target swiftpro_generate_messages_eus
+[35m[1mScanning dependencies of target swiftpro_generate_messages[0m
+[ 86%] Built target swiftpro_generate_messages
+[ 90%] [32m[1mLinking CXX executable /root/catkin_ws/devel/.private/swiftpro/lib/swiftpro/swiftpro_read_node[0m
+[ 90%] Built target swiftpro_read_node
+[ 93%] [32m[1mLinking CXX executable /root/catkin_ws/devel/.private/swiftpro/lib/swiftpro/swiftpro_moveit_node[0m
+[ 93%] Built target swiftpro_moveit_node
+[ 96%] [32m[1mLinking CXX executable /root/catkin_ws/devel/.private/swiftpro/lib/swiftpro/swiftpro_write_node[0m
+[ 96%] Built target swiftpro_write_node
+[100%] [32m[1mLinking CXX executable /root/catkin_ws/devel/.private/swiftpro/lib/swiftpro/swiftpro_rviz_node[0m
+[100%] Built target swiftpro_rviz_node

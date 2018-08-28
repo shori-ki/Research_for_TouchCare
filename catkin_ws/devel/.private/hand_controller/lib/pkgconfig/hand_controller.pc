@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/hand_controller
+
+Name: hand_controller
+Description: Description of hand_controller
+Version: 0.0.0
+Cflags: -I/root/catkin_ws/devel/.private/hand_controller/include
+Libs: -L/root/catkin_ws/devel/.private/hand_controller/lib 
+Requires: 

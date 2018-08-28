@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target _hand_controller_generate_messages_check_deps_sendDataStamped[0m
+[  0%] Built target _hand_controller_generate_messages_check_deps_sendDataStamped
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_eus
+[ 12%] [34m[1mGenerating Python from MSG hand_controller/sendDataStamped[0m
+[ 25%] [34m[1mGenerating Python msg __init__.py for hand_controller[0m
+[ 37%] [34m[1mGenerating Python srv __init__.py for hand_controller[0m
+[ 50%] [34m[1mGenerating Lisp code from hand_controller/sendDataStamped.msg[0m
+[ 62%] [34m[1mGenerating Javascript code from hand_controller/sendDataStamped.msg[0m
+[ 62%] Built target hand_controller_generate_messages_py
+[ 75%] [34m[1mGenerating C++ code from hand_controller/sendDataStamped.msg[0m
+[ 75%] Built target hand_controller_generate_messages_lisp
+[ 75%] Built target hand_controller_generate_messages_nodejs
+[ 87%] [34m[1mGenerating EusLisp code from hand_controller/sendDataStamped.msg[0m
+[100%] [34m[1mGenerating EusLisp manifest code for hand_controller[0m
+[100%] Built target hand_controller_generate_messages_cpp
+[100%] Built target hand_controller_generate_messages_eus
+[100%] Built target hand_controller_generate_messages

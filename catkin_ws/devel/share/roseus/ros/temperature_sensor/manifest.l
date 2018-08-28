@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_sensor/share/roseus/ros/temperature_sensor/manifest.l

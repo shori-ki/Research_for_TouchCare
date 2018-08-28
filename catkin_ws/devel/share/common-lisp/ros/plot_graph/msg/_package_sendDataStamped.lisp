@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/plot_graph/share/common-lisp/ros/plot_graph/msg/_package_sendDataStamped.lisp

@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_controller/lib/python2.7/dist-packages/temperature_controller/msg/_sendDataStamped.py

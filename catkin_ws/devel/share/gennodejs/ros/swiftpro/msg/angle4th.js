@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/swiftpro/share/gennodejs/ros/swiftpro/msg/angle4th.js

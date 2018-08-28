@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/temperature_sensor
+
+Name: temperature_sensor
+Description: Description of temperature_sensor
+Version: 0.0.0
+Cflags: -I/root/catkin_ws/devel/.private/temperature_sensor/include
+Libs: -L/root/catkin_ws/devel/.private/temperature_sensor/lib 
+Requires: 

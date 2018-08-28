@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_sensor/lib/pkgconfig/temperature_sensor.pc

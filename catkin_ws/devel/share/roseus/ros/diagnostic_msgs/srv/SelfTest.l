@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/diagnostic_msgs/share/roseus/ros/diagnostic_msgs/srv/SelfTest.l

@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/swiftpro/share/roseus/ros/swiftpro/manifest.l

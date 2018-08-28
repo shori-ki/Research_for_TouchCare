@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/swiftpro/lib/pkgconfig/swiftpro.pc

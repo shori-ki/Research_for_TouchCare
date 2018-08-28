@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/motor_controller
+
+Name: motor_controller
+Description: Description of motor_controller
+Version: 0.0.0
+Cflags: 
+Libs: -L/root/catkin_ws/devel/.private/motor_controller/lib 
+Requires: 

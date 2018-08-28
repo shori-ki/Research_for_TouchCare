@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+	<!--
+	Set args to record topics for 10 second 
+	-->
+	<arg name="duration" default="23"/>
+    <arg name="path" default="/home/pi/rosbag/thumb.bag"/>
+    <arg name="topic" default="/tempValues/thumb"/>
+    <node pkg="rosbag" type="record" name="record" output="screen" args="--duration=$(arg duration) --output-name=$(arg path) $(arg topic)"/> 
+
+    <node pkg="hand_controller" name="hand_controller" type="hand_controller.py" output="screen"/>
+    	<rosparam command="load" file="$(find hand_controller)/config/hand_controller_parameter.yaml"/>
+    <node pkg="temperature_sensor" name="temperature_sensor" type="temperature_sensor.py" output="screen"/>
+    	<rosparam command="load" file="$(find temperature_sensor)/config/temperature_sensor_parameter.yaml"/>
+
+
+    <!--
+	Add 2[s] sleep to rosservice call /control  
+	-->
+  	<node pkg="timed_roslaunch" type="timed_roslaunch.sh" args="3 /control" name="rosservice_call" output="screen"/>
+</launch>

@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/temperature_controller/share/gennodejs/ros/temperature_controller/msg/sendDataStamped.js

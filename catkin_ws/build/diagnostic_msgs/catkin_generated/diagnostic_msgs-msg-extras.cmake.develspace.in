@@ -1,0 +1,2 @@
+set(diagnostic_msgs_MESSAGE_FILES "/root/catkin_ws/src/common_msgs-jade-devel/diagnostic_msgs/msg/DiagnosticArray.msg;/root/catkin_ws/src/common_msgs-jade-devel/diagnostic_msgs/msg/DiagnosticStatus.msg;/root/catkin_ws/src/common_msgs-jade-devel/diagnostic_msgs/msg/KeyValue.msg")
+set(diagnostic_msgs_SERVICE_FILES "/root/catkin_ws/src/common_msgs-jade-devel/diagnostic_msgs/srv/AddDiagnostics.srv;/root/catkin_ws/src/common_msgs-jade-devel/diagnostic_msgs/srv/SelfTest.srv")

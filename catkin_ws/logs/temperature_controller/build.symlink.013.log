@@ -1,0 +1,7 @@
+Linked: (/root/catkin_ws/devel/.private/temperature_controller/lib/pkgconfig/temperature_controller.pc, /root/catkin_ws/devel/lib/pkgconfig/temperature_controller.pc)
+Symlinking /root/catkin_ws/devel/lib/python2.7/dist-packages/temperature_controller/__init__.py
+Linked: (/root/catkin_ws/devel/.private/temperature_controller/share/temperature_controller/cmake/temperature_controllerConfig-version.cmake, /root/catkin_ws/devel/share/temperature_controller/cmake/temperature_controllerConfig-version.cmake)
+Symlinking /root/catkin_ws/devel/share/temperature_controller/cmake/temperature_controller-msg-paths.cmake
+Linked: (/root/catkin_ws/devel/.private/temperature_controller/share/temperature_controller/cmake/temperature_controllerConfig.cmake, /root/catkin_ws/devel/share/temperature_controller/cmake/temperature_controllerConfig.cmake)
+Symlinking /root/catkin_ws/devel/share/temperature_controller/cmake/temperature_controller-msg-extras.cmake
+Symlinking /root/catkin_ws/devel/share/roseus/ros/temperature_controller/manifest.l
