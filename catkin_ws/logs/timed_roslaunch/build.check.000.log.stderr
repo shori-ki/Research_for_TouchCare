@@ -1,3 +1,0 @@
-CMake Error: The source directory "/root/catkin_ws/src/timed_roslaunch-master" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.
-make: *** [cmake_check_build_system] Error 1

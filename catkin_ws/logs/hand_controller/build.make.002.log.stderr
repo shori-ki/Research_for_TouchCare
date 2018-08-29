@@ -1,6 +1,0 @@
-[01m[K/root/catkin_ws/src/hand_controller/src/hand_controller.cpp:27:57:[m[K [01;31m[Kerror: [m[Kno '[01m[Kvoid HandWrapper::rubbingMotion(unsigned int)[m[K' member function declared in class '[01m[KHandWrapper[m[K'
- void HandWrapper::rubbingMotion(unsigned int repetitions)
-[01;32m[K                                                         ^[m[K
-make[2]: *** [CMakeFiles/hand_controller.dir/src/hand_controller.cpp.o] Error 1
-make[1]: *** [CMakeFiles/hand_controller.dir/all] Error 2
-make: *** [all] Error 2

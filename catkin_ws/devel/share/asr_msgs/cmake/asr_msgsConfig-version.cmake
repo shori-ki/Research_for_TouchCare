@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/asr_msgs/share/asr_msgs/cmake/asr_msgsConfig-version.cmake

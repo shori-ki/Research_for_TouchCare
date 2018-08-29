@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/asr_cyberglove_visualization/lib/pkgconfig/asr_cyberglove_visualization.pc

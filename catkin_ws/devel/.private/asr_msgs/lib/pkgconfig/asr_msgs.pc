@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/asr_msgs
+
+Name: asr_msgs
+Description: Description of asr_msgs
+Version: 1.1.0
+Cflags: -I/root/catkin_ws/devel/.private/asr_msgs/include
+Libs: -L/root/catkin_ws/devel/.private/asr_msgs/lib 
+Requires: std_msgs geometry_msgs

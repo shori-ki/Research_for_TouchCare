@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/devel/.private/my_urdf_test_pkg
+
+Name: my_urdf_test_pkg
+Description: Description of my_urdf_test_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/root/catkin_ws/devel/.private/my_urdf_test_pkg/lib 
+Requires: 

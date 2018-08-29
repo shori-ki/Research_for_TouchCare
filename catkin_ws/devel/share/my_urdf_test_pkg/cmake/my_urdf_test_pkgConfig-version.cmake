@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/my_urdf_test_pkg/share/my_urdf_test_pkg/cmake/my_urdf_test_pkgConfig-version.cmake

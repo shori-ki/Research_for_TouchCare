@@ -1,0 +1,4 @@
+my_urdf_test_pkg
+/root/catkin_ws/devel/.private/my_urdf_test_pkg/share/my_urdf_test_pkg/cmake/my_urdf_test_pkgConfig-version.cmake /root/catkin_ws/devel/share/my_urdf_test_pkg/cmake/my_urdf_test_pkgConfig-version.cmake
+/root/catkin_ws/devel/.private/my_urdf_test_pkg/share/my_urdf_test_pkg/cmake/my_urdf_test_pkgConfig.cmake /root/catkin_ws/devel/share/my_urdf_test_pkg/cmake/my_urdf_test_pkgConfig.cmake
+/root/catkin_ws/devel/.private/my_urdf_test_pkg/lib/pkgconfig/my_urdf_test_pkg.pc /root/catkin_ws/devel/lib/pkgconfig/my_urdf_test_pkg.pc

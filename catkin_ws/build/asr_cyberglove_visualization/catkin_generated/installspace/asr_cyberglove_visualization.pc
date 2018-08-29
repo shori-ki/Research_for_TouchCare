@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/install
+
+Name: asr_cyberglove_visualization
+Description: Description of asr_cyberglove_visualization
+Version: 1.0.0
+Cflags: 
+Libs: -L/root/catkin_ws/install/lib 
+Requires: asr_msgs roscpp rospy sensor_msgs std_msgs tf

@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/asr_msgs/share/common-lisp/ros/asr_msgs/msg/AsrViewport.lisp

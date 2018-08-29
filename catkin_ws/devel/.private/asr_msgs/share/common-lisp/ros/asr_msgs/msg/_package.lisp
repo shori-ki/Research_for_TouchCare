@@ -1,0 +1,17 @@
+(cl:defpackage asr_msgs-msg
+  (:use )
+  (:export
+   "<ASRATTRIBUTEDPOINT>"
+   "ASRATTRIBUTEDPOINT"
+   "<ASRATTRIBUTEDPOINTCLOUD>"
+   "ASRATTRIBUTEDPOINTCLOUD"
+   "<ASRGLOVE>"
+   "ASRGLOVE"
+   "<ASROBJECT>"
+   "ASROBJECT"
+   "<ASRTYPEANDID>"
+   "ASRTYPEANDID"
+   "<ASRVIEWPORT>"
+   "ASRVIEWPORT"
+  ))
+

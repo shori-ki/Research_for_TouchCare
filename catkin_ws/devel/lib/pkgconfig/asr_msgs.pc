@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/asr_msgs/lib/pkgconfig/asr_msgs.pc
