@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 RUN apt update
 # System normal libraries
-RUN apt-get install -y git wget apt-utils
+RUN apt-get install -y git wget apt-utils vim
 
 # install ros
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -13,7 +13,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9
     && echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list\
     && apt-get update\
     && apt-get install -y ros-kinetic-desktop-full\
-    && apt-get install python-pip python3-pip python3-yaml python3-tk\
+    && apt-get install -y python-pip python3-pip python3-yaml python3-tk\
     && pip3 install rospkg catkin_pkg matplotlib\
     && rosdep init\
     && rosdep update\
