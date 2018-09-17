@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/plot_graph/share/gennodejs/ros/plot_graph/msg/_index.js

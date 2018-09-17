@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/install
-
-Name: plot_graph
-Description: Description of plot_graph
-Version: 0.0.0
-Cflags: -I/root/catkin_ws/install/include
-Libs: -L/root/catkin_ws/install/lib -lplot_graph
-Requires: 

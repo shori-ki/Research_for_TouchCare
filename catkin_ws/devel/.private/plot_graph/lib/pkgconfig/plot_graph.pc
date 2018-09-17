@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/devel/.private/plot_graph
-
-Name: plot_graph
-Description: Description of plot_graph
-Version: 0.0.0
-Cflags: -I/root/catkin_ws/devel/.private/plot_graph/include
-Libs: -L/root/catkin_ws/devel/.private/plot_graph/lib -lplot_graph
-Requires: 

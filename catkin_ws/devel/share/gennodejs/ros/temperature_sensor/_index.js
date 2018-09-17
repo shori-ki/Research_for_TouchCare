@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/temperature_sensor/share/gennodejs/ros/temperature_sensor/_index.js

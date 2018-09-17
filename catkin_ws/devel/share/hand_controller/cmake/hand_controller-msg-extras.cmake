@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/hand_controller/share/hand_controller/cmake/hand_controller-msg-extras.cmake

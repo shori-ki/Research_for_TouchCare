@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/my_urdf_test_pkg/lib/pkgconfig/my_urdf_test_pkg.pc

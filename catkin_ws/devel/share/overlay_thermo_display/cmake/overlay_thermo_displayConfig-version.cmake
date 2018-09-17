@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/overlay_thermo_display/share/overlay_thermo_display/cmake/overlay_thermo_displayConfig-version.cmake

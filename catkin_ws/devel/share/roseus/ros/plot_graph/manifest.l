@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/plot_graph/share/roseus/ros/plot_graph/manifest.l

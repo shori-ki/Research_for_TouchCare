@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/devel/.private/diagnostic_msgs
-
-Name: diagnostic_msgs
-Description: Description of diagnostic_msgs
-Version: 1.12.6
-Cflags: -I/root/catkin_ws/devel/.private/diagnostic_msgs/include
-Libs: -L/root/catkin_ws/devel/.private/diagnostic_msgs/lib 
-Requires: message_runtime std_msgs

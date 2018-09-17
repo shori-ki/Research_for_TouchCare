@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/install
-
-Name: overlay_thermo_display
-Description: Description of overlay_thermo_display
-Version: 0.0.0
-Cflags: 
-Libs: -L/root/catkin_ws/install/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/hand_visualization/lib/pkgconfig/hand_visualization.pc

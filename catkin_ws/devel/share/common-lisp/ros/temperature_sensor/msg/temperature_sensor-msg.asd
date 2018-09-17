@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/temperature_sensor/share/common-lisp/ros/temperature_sensor/msg/temperature_sensor-msg.asd
