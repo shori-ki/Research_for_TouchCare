@@ -1,0 +1,5 @@
+hand_visualization
+/root/catkin_ws/devel/.private/hand_visualization/share/hand_visualization/cmake/hand_visualizationConfig-version.cmake /root/catkin_ws/devel/share/hand_visualization/cmake/hand_visualizationConfig-version.cmake
+/root/catkin_ws/devel/.private/hand_visualization/share/hand_visualization/cmake/hand_visualizationConfig.cmake /root/catkin_ws/devel/share/hand_visualization/cmake/hand_visualizationConfig.cmake
+/root/catkin_ws/devel/.private/hand_visualization/lib/hand_visualization/hand_visualization /root/catkin_ws/devel/lib/hand_visualization/hand_visualization
+/root/catkin_ws/devel/.private/hand_visualization/lib/pkgconfig/hand_visualization.pc /root/catkin_ws/devel/lib/pkgconfig/hand_visualization.pc

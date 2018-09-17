@@ -60,7 +60,7 @@ class temparatureSensorNode():
         #rospy.loginfo(THERMISTORS_T)
 
     def run(self):
-        self.rate = rospy.Rate(0.1)
+        self.rate = rospy.Rate(10)
         start = rospy.Time.now()
         while not rospy.is_shutdown():
             values = [self.mcp.read_adc(i) for i in range(8)]

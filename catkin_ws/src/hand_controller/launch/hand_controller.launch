@@ -18,5 +18,5 @@
     <!--
 	Add 2[s] sleep to rosservice call /control  
 	-->
-  	<node pkg="timed_roslaunch" type="timed_roslaunch.sh" args="3 /control" name="rosservice_call" output="screen"/>
+  	<!-- <node pkg="timed_roslaunch" type="timed_roslaunch.sh" args="3 /control" name="rosservice_call" output="screen"/> -->
 </launch>

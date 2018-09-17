@@ -20,8 +20,8 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9
     && echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc\
     && echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc\
     && echo "alias s='source ~/catkin_ws/devel/setup.bash'" >> ~/.bashrc\
-    && echo "export ROS_HOSTNAME=163.221.125.53" >> ~/.bashrc\
-    && echo "export ROS_MASTER_URI=http://163.221.125.53:11311" >> ~/.bashrc\
+    && echo "export ROS_HOSTNAME=163.221.xxx.xxx" >> ~/.bashrc\
+    && echo "export ROS_MASTER_URI=http://163.221.xxx.xxx:11311" >> ~/.bashrc\
     && apt-get install -y python-rosinstall python-rosinstall-generator python-wstool build-essential
 WORKDIR /root
 
