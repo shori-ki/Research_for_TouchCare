@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/install
-
-Name: pro_moveit_config
-Description: Description of pro_moveit_config
-Version: 0.3.0
-Cflags: 
-Libs: -L/root/catkin_ws/install/lib 
-Requires: 

@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/asr_cyberglove_visualization/share/asr_cyberglove_visualization/cmake/asr_cyberglove_visualizationConfig-version.cmake

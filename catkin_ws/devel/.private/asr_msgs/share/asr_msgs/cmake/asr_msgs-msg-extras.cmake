@@ -1,2 +1,0 @@
-set(asr_msgs_MESSAGE_FILES "/root/catkin_ws/src/asr_msgs-master/msg/AsrObject.msg;/root/catkin_ws/src/asr_msgs-master/msg/AsrTypeAndId.msg;/root/catkin_ws/src/asr_msgs-master/msg/AsrGlove.msg;/root/catkin_ws/src/asr_msgs-master/msg/AsrAttributedPointCloud.msg;/root/catkin_ws/src/asr_msgs-master/msg/AsrAttributedPoint.msg;/root/catkin_ws/src/asr_msgs-master/msg/AsrViewport.msg")
-set(asr_msgs_SERVICE_FILES "")

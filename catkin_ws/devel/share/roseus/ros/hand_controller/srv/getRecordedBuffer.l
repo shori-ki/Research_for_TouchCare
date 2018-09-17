@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/hand_controller/share/roseus/ros/hand_controller/srv/getRecordedBuffer.l

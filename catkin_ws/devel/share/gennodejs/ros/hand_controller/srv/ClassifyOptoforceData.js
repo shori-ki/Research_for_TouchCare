@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/hand_controller/share/gennodejs/ros/hand_controller/srv/ClassifyOptoforceData.js

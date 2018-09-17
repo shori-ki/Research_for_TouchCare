@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/asr_msgs/share/roseus/ros/asr_msgs/manifest.l

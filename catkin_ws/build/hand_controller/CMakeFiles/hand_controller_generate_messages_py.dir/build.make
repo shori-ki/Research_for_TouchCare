@@ -55,7 +55,6 @@ include CMakeFiles/hand_controller_generate_messages_py.dir/progress.make
 
 CMakeFiles/hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/_sendDataStamped.py
 CMakeFiles/hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/__init__.py
-CMakeFiles/hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/srv/__init__.py
 
 
 /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/_sendDataStamped.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
@@ -69,15 +68,9 @@ CMakeFiles/hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/build/hand_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for hand_controller"
 	catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg --initpy
 
-/root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
-/root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/srv/__init__.py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/_sendDataStamped.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/catkin_ws/build/hand_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python srv __init__.py for hand_controller"
-	catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/srv --initpy
-
 hand_controller_generate_messages_py: CMakeFiles/hand_controller_generate_messages_py
 hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/_sendDataStamped.py
 hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/msg/__init__.py
-hand_controller_generate_messages_py: /root/catkin_ws/devel/.private/hand_controller/lib/python2.7/dist-packages/hand_controller/srv/__init__.py
 hand_controller_generate_messages_py: CMakeFiles/hand_controller_generate_messages_py.dir/build.make
 
 .PHONY : hand_controller_generate_messages_py

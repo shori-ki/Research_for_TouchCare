@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/temperature_controller/share/temperature_controller/cmake/temperature_controller-msg-paths.cmake

@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/temperature_controller/share/roseus/ros/temperature_controller/msg/sendDataStamped.l

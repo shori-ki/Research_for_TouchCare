@@ -1,0 +1,1 @@
+/root/catkin_ws/devel/.private/overlay_thermo_display/lib/pkgconfig/overlay_thermo_display.pc

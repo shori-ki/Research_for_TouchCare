@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/swiftpro/include/swiftpro/SwiftproState.h

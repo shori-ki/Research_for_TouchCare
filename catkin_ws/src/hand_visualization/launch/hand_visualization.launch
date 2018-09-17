@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node pkg="hand_visualization" name="hand_visualization" type="hand_visualization" output="screen"/>
+    <node pkg="overlay_thermo_display" name="overlay_thermo_display" type="overlay_thermo_display" output="screen"/>
+    <node pkg="rviz" name="rviz" type="rviz" output="screen"/>
+
+</launch>

@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/devel/.private/swiftpro
-
-Name: swiftpro
-Description: Description of swiftpro
-Version: 0.0.0
-Cflags: -I/root/catkin_ws/devel/.private/swiftpro/include
-Libs: -L/root/catkin_ws/devel/.private/swiftpro/lib -lswiftpro
-Requires: roscpp rospy std_msgs tf sensor_msgs message_runtime

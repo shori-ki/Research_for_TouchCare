@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /root/catkin_ws/build/sensor_msgs
 include test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings.dir/progress.make
 
 test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings:
-	cd /root/catkin_ws/build/sensor_msgs/test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /root/catkin_ws/build/sensor_msgs/test_results/sensor_msgs/gtest-sensor_msgs_test_image_encodings.xml /root/catkin_ws/devel/.private/sensor_msgs/lib/sensor_msgs/sensor_msgs_test_image_encodings\ --gtest_output=xml:/root/catkin_ws/build/sensor_msgs/test_results/sensor_msgs/gtest-sensor_msgs_test_image_encodings.xml
+	cd /root/catkin_ws/build/sensor_msgs/test && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/run_tests.py /root/catkin_ws/build/sensor_msgs/test_results/sensor_msgs/gtest-sensor_msgs_test_image_encodings.xml "/root/catkin_ws/devel/.private/sensor_msgs/lib/sensor_msgs/sensor_msgs_test_image_encodings --gtest_output=xml:/root/catkin_ws/build/sensor_msgs/test_results/sensor_msgs/gtest-sensor_msgs_test_image_encodings.xml"
 
 run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings: test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings
 run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings: test/CMakeFiles/run_tests_sensor_msgs_gtest_sensor_msgs_test_image_encodings.dir/build.make

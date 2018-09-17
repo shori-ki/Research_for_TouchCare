@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/devel/.private/temperature_controller
-
-Name: temperature_controller
-Description: Description of temperature_controller
-Version: 0.0.0
-Cflags: -I/root/catkin_ws/devel/.private/temperature_controller/include
-Libs: -L/root/catkin_ws/devel/.private/temperature_controller/lib 
-Requires: 

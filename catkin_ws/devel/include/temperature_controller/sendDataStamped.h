@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/temperature_controller/include/temperature_controller/sendDataStamped.h

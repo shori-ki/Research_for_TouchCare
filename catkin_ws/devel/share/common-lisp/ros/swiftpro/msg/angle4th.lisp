@@ -1,1 +1,0 @@
-/root/catkin_ws/devel/.private/swiftpro/share/common-lisp/ros/swiftpro/msg/angle4th.lisp
