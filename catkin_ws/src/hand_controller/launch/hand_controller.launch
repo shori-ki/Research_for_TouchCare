@@ -6,7 +6,7 @@
 	-->
 	<arg name="duration" default="23"/>
     <arg name="path" default="/home/pi/rosbag/thumb.bag"/>
-    <arg name="topic" default="/tempValues/thumb"/>
+    <arg name="topic" default="/tempValue/thumb"/>
     <node pkg="rosbag" type="record" name="record" output="screen" args="--duration=$(arg duration) --output-name=$(arg path) $(arg topic)"/> 
 
     <node pkg="hand_controller" name="hand_controller" type="hand_controller.py" output="screen"/>

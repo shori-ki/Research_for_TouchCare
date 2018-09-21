@@ -6,8 +6,23 @@ HandVisualization::HandVisualization()
   marker_array_pub = nh.advertise<visualization_msgs::MarkerArray>("marker_array", 100);
 
   // subscriber
+  tempValue_sub = nh.subscribe("/tempValue/pinky_1", 1000, &HandVisualization::tempValusesPinky_1Callback, this);
+  /*
+  tempValue_sub = nh.subscribe("/tempValue/pinky_2", 1000, &HandVisualization::tempValusesPinky_2Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/ring_1", 1000, &HandVisualization::tempValusesRing_1Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/ring_2", 1000, &HandVisualization::tempValusesRing_2Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/middle_1", 1000, &HandVisualization::tempValusesMiddle_1Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/middle_2", 1000, &HandVisualization::tempValusesMiddle_2Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/index_1", 1000, &HandVisualization::tempValusesIndex_1Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/index_2", 1000, &HandVisualization::tempValusesIndex_2Callback, this);
   tempValue_sub = nh.subscribe("/tempValue/thumb", 1000, &HandVisualization::tempValusesThumbCallback, this);
-
+  tempValue_sub = nh.subscribe("/tempValue/palm_1", 1000, &HandVisualization::tempValusesPalm_1Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/palm_2", 1000, &HandVisualization::tempValusesPalm_2Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/palm_3", 1000, &HandVisualization::tempValusesPalm_3Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/palm_4", 1000, &HandVisualization::tempValusesPalm_4Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/palm_5", 1000, &HandVisualization::tempValusesPalm_5Callback, this);
+  tempValue_sub = nh.subscribe("/tempValue/palm_6", 1000, &HandVisualization::tempValusesPalm_6Callback, this);
+  */
   // timer
   timer = nh.createTimer(ros::Duration(0.1), &HandVisualization::timerCallback, this);
 
@@ -41,12 +56,82 @@ double* HandVisualization::convert2RGB(double &x, double (&rgb)[3])
   return rgb;
 }
 
-void HandVisualization::tempValusesThumbCallback(const sensor_msgs::Temperature::ConstPtr& data)
+// Callback for sensors
+void tempValusesPinky_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
-  inputTemp = data->temperature;
-  // ROS_INFO_STREAM(inputTemp);
+  tempPinky_1 = data->temperature;
+}
+/*
+void tempValusesPinky_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPinky_2 = data->temperature;
 }
 
+void tempValusesRing_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempRing_1 = data->temperature;
+}
+
+void tempValusesRing_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempRing_2 = data->temperature;
+}
+
+void tempValusesMiddle_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempMiddle_1 = data->temperature;
+}
+
+void tempValusesMiddle_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempMiddle_2 = data->temperature;
+}
+
+void tempValusesIndex_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempIndex_1 = data->temperature;
+}
+
+void tempValusesIndex_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempIndex_2 = data->temperature;
+}
+
+void tempValusesThumbCallback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempThumb = data->temperature;
+}
+
+void tempValusesPalm_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_1 = data->temperature;
+}
+
+void tempValusesPalm_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_2 = data->temperature;
+}
+
+void tempValusesPalm_3Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_3 = data->temperature;
+}
+
+void tempValusesPalm_4Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_4 = data->temperature;
+}
+
+void tempValusesPalm_5Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_5 = data->temperature;
+}
+
+void tempValusesPalm_6Callback(const sensor_msgs::Temperature::ConstPtr& data)
+{
+  tempPalm_6 = data->temperature;
+}
+*/
 void HandVisualization::visualizeImages(int n, std::string name)
 {
   std::string meshPath = "package://hand_visualization/meshes/";
@@ -83,7 +168,7 @@ void HandVisualization::visualizeImages(int n, std::string name)
 void HandVisualization::timerCallback(const ros::TimerEvent&)
 {
 
-  double norm = (inputTemp - MIN_temp) / (MAX_temp - MIN_temp);
+  double norm = (tempPinky_1 - MIN_temp) / (MAX_temp - MIN_temp);
   convert2RGB(norm, rgb);
   // std::cout << rgb[0] << std::endl;
   // std::cout << rgb[1] << std::endl;

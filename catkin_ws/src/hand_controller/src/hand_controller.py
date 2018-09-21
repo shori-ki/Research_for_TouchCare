@@ -32,7 +32,7 @@ class handControllerNode():
 
         # Subscribers
         rospy.Subscriber('/tempValue/thumb', Temperature, self.tempValusesThumb_callback)
-        rospy.Subscriber('/tempValue/index', Temperature, self.tempValusesIndex_callback)
+        rospy.Subscriber('/tempValue/index_1', Temperature, self.tempValusesIndex_callback)
 
         # Advertise services
         rospy.Service('control', Empty, self.control_callback)

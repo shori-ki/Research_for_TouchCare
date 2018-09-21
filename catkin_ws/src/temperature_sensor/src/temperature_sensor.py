@@ -24,19 +24,25 @@ class temparatureSensorNode():
     CONST_K = rosparam.get_param("/KELVIN")
 
     topic_basename = '/tempValue'
-    topic_fingers_name = ['thumb', 'index', 'middle', 'ring', 'pinky']
+    topic_fingers_name = ['pinky_1', 'pinky_2', 'ring_1', 'ring_2', 'middle_1', 'middle_2', 'index_1', 'index_2', 'thumb', 
+                          'palm_1', 'palm_2', 'palm_3', 'palm_4', 'palm_5', 'palm_6']
 
     def __init__(self):
         # Print nice channel column headers.
         rospy.loginfo('temperature_sensor node started.')
         rospy.loginfo('Reading temperature of thermistor, press Ctrl-C to quit...')
-        rospy.loginfo('| {0:>4} | {1:>4} | {2:>4} | {4:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} |'.format(*range(8)))
-        rospy.loginfo('-' * 57)
+        rospy.loginfo('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} | {8:>4} | {9:>4} | {10:>4} | {11:>4} | {12:>4} | {13:>4} | {14:>4} | {15:>4} |'.format(*range(16)))
+        rospy.loginfo('-' * 114)
 
-        # Hardware SPI configuration:
-        self.SPI_PORT   = 0
-        self.SPI_DEVICE = 0
-        self.mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(self.SPI_PORT, self.SPI_DEVICE))
+        # Hardware SPI0 configuration:
+        self.SPI_PORT_0   = 0
+        self.SPI_DEVICE_0 = 0
+        self.mcp_0 = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(self.SPI_PORT_0, self.SPI_DEVICE_0))
+
+        # Hardware SPI1 configuration:
+        self.SPI_PORT_1   = 1
+        self.SPI_DEVICE_1 = 2
+        self.mcp_1 = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(self.SPI_PORT_1, self.SPI_DEVICE_1))
 
         # Create and advertise publishers for each connected sensor
         self.publishers = []
@@ -63,7 +69,9 @@ class temparatureSensorNode():
         self.rate = rospy.Rate(10)
         start = rospy.Time.now()
         while not rospy.is_shutdown():
-            values = [self.mcp.read_adc(i) for i in range(8)]
+            values_0 = [self.mcp_0.read_adc(i) for i in range(8)]
+            values_1 = [self.mcp_1.read_adc(i) for i in range(8)]
+            values = values_0 + values_1
             THERMISTORS_T = map(self.calcTemp, values)
             for i in range(len(self.topic_fingers_name)):
                 # temperature on each thermistor
@@ -75,7 +83,9 @@ class temparatureSensorNode():
                 # we publish values about each thermistor
                 self.publishers[i].publish(self.tempValues[i])
 
-                # rospy.loginfo('| {0:>4} | {1:>4} | {2:>4} | {4:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} |'.format(THERMISTORS_T[0], THERMISTORS_T[1], THERMISTORS_T[2], THERMISTORS_T[3], THERMISTORS_T[4], THERMISTORS_T[5], THERMISTORS_T[6], THERMISTORS_T[7]))
+                rospy.loginfo('| {0:>4} | {1:>4} | {2:>4} | {3:>4} | {4:>4} | {5:>4} | {6:>4} | {7:>4} | {8:>4} | {9:>4} | {10:>4} | {11:>4} | {12:>4} | {13:>4} | {14:>4} | {15:>4} |'.format(
+                    THERMISTORS_T[0], THERMISTORS_T[1], THERMISTORS_T[2], THERMISTORS_T[3], THERMISTORS_T[4], THERMISTORS_T[5], THERMISTORS_T[6], THERMISTORS_T[7], 
+                    THERMISTORS_T[8], THERMISTORS_T[9], THERMISTORS_T[10], THERMISTORS_T[11], THERMISTORS_T[12], THERMISTORS_T[13], THERMISTORS_T[14], THERMISTORS_T[15]))
 
                 # timestamp on each thermistor
                 self.tempValues[i].header.stamp = rospy.Time.now() - start
