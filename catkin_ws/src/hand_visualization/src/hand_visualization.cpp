@@ -6,25 +6,24 @@ HandVisualization::HandVisualization()
   marker_array_pub = nh.advertise<visualization_msgs::MarkerArray>("marker_array", 100);
 
   // subscriber
-  tempValue_sub = nh.subscribe("/tempValue/pinky_1", 1000, &HandVisualization::tempValusesPinky_1Callback, this);
-  /*
-  tempValue_sub = nh.subscribe("/tempValue/pinky_2", 1000, &HandVisualization::tempValusesPinky_2Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/ring_1", 1000, &HandVisualization::tempValusesRing_1Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/ring_2", 1000, &HandVisualization::tempValusesRing_2Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/middle_1", 1000, &HandVisualization::tempValusesMiddle_1Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/middle_2", 1000, &HandVisualization::tempValusesMiddle_2Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/index_1", 1000, &HandVisualization::tempValusesIndex_1Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/index_2", 1000, &HandVisualization::tempValusesIndex_2Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/thumb", 1000, &HandVisualization::tempValusesThumbCallback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_1", 1000, &HandVisualization::tempValusesPalm_1Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_2", 1000, &HandVisualization::tempValusesPalm_2Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_3", 1000, &HandVisualization::tempValusesPalm_3Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_4", 1000, &HandVisualization::tempValusesPalm_4Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_5", 1000, &HandVisualization::tempValusesPalm_5Callback, this);
-  tempValue_sub = nh.subscribe("/tempValue/palm_6", 1000, &HandVisualization::tempValusesPalm_6Callback, this);
-  */
+  tempValue_sub_1 = nh.subscribe("/tempValue/pinky_1", 1000, &HandVisualization::tempValusesPinky_1Callback, this);
+  tempValue_sub_2 = nh.subscribe("/tempValue/pinky_2", 1000, &HandVisualization::tempValusesPinky_2Callback, this);
+  tempValue_sub_3 = nh.subscribe("/tempValue/ring_1", 1000, &HandVisualization::tempValusesRing_1Callback, this);
+  tempValue_sub_4 = nh.subscribe("/tempValue/ring_2", 1000, &HandVisualization::tempValusesRing_2Callback, this);
+  tempValue_sub_5 = nh.subscribe("/tempValue/middle_1", 1000, &HandVisualization::tempValusesMiddle_1Callback, this);
+  tempValue_sub_6 = nh.subscribe("/tempValue/middle_2", 1000, &HandVisualization::tempValusesMiddle_2Callback, this);
+  tempValue_sub_7 = nh.subscribe("/tempValue/index_1", 1000, &HandVisualization::tempValusesIndex_1Callback, this);
+  tempValue_sub_8 = nh.subscribe("/tempValue/index_2", 1000, &HandVisualization::tempValusesIndex_2Callback, this);
+  tempValue_sub_9 = nh.subscribe("/tempValue/thumb", 1000, &HandVisualization::tempValusesThumbCallback, this);
+  tempValue_sub_10 = nh.subscribe("/tempValue/palm_1", 1000, &HandVisualization::tempValusesPalm_1Callback, this);
+  tempValue_sub_11 = nh.subscribe("/tempValue/palm_2", 1000, &HandVisualization::tempValusesPalm_2Callback, this);
+  tempValue_sub_12 = nh.subscribe("/tempValue/palm_3", 1000, &HandVisualization::tempValusesPalm_3Callback, this);
+  tempValue_sub_13 = nh.subscribe("/tempValue/palm_4", 1000, &HandVisualization::tempValusesPalm_4Callback, this);
+  tempValue_sub_14 = nh.subscribe("/tempValue/palm_5", 1000, &HandVisualization::tempValusesPalm_5Callback, this);
+  tempValue_sub_15 = nh.subscribe("/tempValue/palm_6", 1000, &HandVisualization::tempValusesPalm_6Callback, this);
+  
   // timer
-  timer = nh.createTimer(ros::Duration(0.1), &HandVisualization::timerCallback, this);
+  timer = nh.createTimer(ros::Duration(0.01), &HandVisualization::timerCallback, this);
 
   // maker initialization
   marker_array.markers.resize(15);
@@ -35,6 +34,15 @@ HandVisualization::~HandVisualization()
 {
 
 }
+
+// void HandVisualization::Callback(const ros::MessageEvent<sensor_msgs::Temperature const>& event)
+// {
+//   const ros::M_string& header = event.getConnectionHeader();
+//   std::string topic = header.at("topic");
+//   ROS_INFO("[%s]", topic.c_str());
+//   ROS_INFO_STREAM("Pinky_1: " << tempPinky_1);
+//   ROS_INFO_STREAM("Pinky_2: " << tempPinky_2);
+// }
 
 double HandVisualization::sigmoid(double x, double gain, double offset_x)
 {
@@ -57,81 +65,81 @@ double* HandVisualization::convert2RGB(double &x, double (&rgb)[3])
 }
 
 // Callback for sensors
-void tempValusesPinky_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPinky_1Callback(const sensor_msgs::Temperature::ConstPtr& data_1)
 {
-  tempPinky_1 = data->temperature;
-}
-/*
-void tempValusesPinky_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
-{
-  tempPinky_2 = data->temperature;
+  tempPinky_1 = data_1->temperature;
 }
 
-void tempValusesRing_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPinky_2Callback(const sensor_msgs::Temperature::ConstPtr& data_2)
 {
-  tempRing_1 = data->temperature;
+  tempPinky_2 = data_2->temperature;
 }
 
-void tempValusesRing_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesRing_1Callback(const sensor_msgs::Temperature::ConstPtr& data_3)
+{
+  tempRing_1 = data_3->temperature;
+}
+
+void HandVisualization::tempValusesRing_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempRing_2 = data->temperature;
 }
 
-void tempValusesMiddle_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesMiddle_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempMiddle_1 = data->temperature;
 }
 
-void tempValusesMiddle_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesMiddle_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempMiddle_2 = data->temperature;
 }
 
-void tempValusesIndex_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesIndex_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempIndex_1 = data->temperature;
 }
 
-void tempValusesIndex_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesIndex_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempIndex_2 = data->temperature;
 }
 
-void tempValusesThumbCallback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesThumbCallback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempThumb = data->temperature;
 }
 
-void tempValusesPalm_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_1Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_1 = data->temperature;
 }
 
-void tempValusesPalm_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_2Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_2 = data->temperature;
 }
 
-void tempValusesPalm_3Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_3Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_3 = data->temperature;
 }
 
-void tempValusesPalm_4Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_4Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_4 = data->temperature;
 }
 
-void tempValusesPalm_5Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_5Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_5 = data->temperature;
 }
 
-void tempValusesPalm_6Callback(const sensor_msgs::Temperature::ConstPtr& data)
+void HandVisualization::tempValusesPalm_6Callback(const sensor_msgs::Temperature::ConstPtr& data)
 {
   tempPalm_6 = data->temperature;
 }
-*/
+
 void HandVisualization::visualizeImages(int n, std::string name)
 {
   std::string meshPath = "package://hand_visualization/meshes/";
@@ -165,30 +173,72 @@ void HandVisualization::visualizeImages(int n, std::string name)
   marker_array.markers[n].color.a = 1.0f;
 }
 
+
 void HandVisualization::timerCallback(const ros::TimerEvent&)
 {
-
-  double norm = (tempPinky_1 - MIN_temp) / (MAX_temp - MIN_temp);
-  convert2RGB(norm, rgb);
   // std::cout << rgb[0] << std::endl;
   // std::cout << rgb[1] << std::endl;
   // std::cout << rgb[2] << std::endl;
   // std::cout << norm << std::endl;
-  // ROS_INFO_STREAM(inputTemp);
+
+  double norm = (tempPinky_1 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(0, fingerName[0]);
+
+  norm = (tempPinky_2 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(1, fingerName[1]);
+
+  norm = (tempRing_1 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(2, fingerName[2]);
+
+  norm = (tempRing_2 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(3, fingerName[3]);
+
+  norm = (tempMiddle_1 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(4, fingerName[4]);
+
+  norm = (tempMiddle_2 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(5, fingerName[5]);
+
+  norm = (tempIndex_1 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(6, fingerName[6]);
+
+  norm = (tempIndex_2 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(7, fingerName[7]);
+
+  norm = (tempThumb - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(8, fingerName[8]);
+
+  norm = (tempPalm_1 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(9, fingerName[9]);
+
+  norm = (tempPalm_2 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(10, fingerName[10]);
+
+  norm = (tempPalm_3 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(11, fingerName[11]);
+
+  norm = (tempPalm_4 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(12, fingerName[12]);
+
+  norm = (tempPalm_5 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(13, fingerName[13]);
+
+  norm = (tempPalm_6 - MIN_temp) / (MAX_temp - MIN_temp);
+  convert2RGB(norm, rgb);
   visualizeImages(14, fingerName[14]);
 
   marker_array_pub.publish(marker_array);

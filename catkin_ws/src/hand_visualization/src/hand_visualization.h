@@ -6,6 +6,7 @@
 #include <visualization_msgs/MarkerArray.h>
 #include <string>
 #include <sensor_msgs/Temperature.h>
+#include <std_msgs/String.h>
 #include <vector>
 
 #define MAX_temp 45.0
@@ -14,22 +15,23 @@
 class HandVisualization
 {
 private:
-	std::vector<std::string> fingerName = {"Pinky_1", "Pinky_2", "Ring_1", "Ring_2", "Middle_1", "Middle_2", "Index_1", "Index_2", "Thumb", "Palm_1", "Palm_2", "Palm_3", "Palm_4", "Palm_5", "Palm_6"};
+	std::vector<std::string> fingerName = {"Pinky_1", "Pinky_2", "Ring_1", "Ring_2", "Middle_1", "Middle_2", "Index_1", "Index_2", "Thumb", 
+	                                       "Palm_1", "Palm_2", "Palm_3", "Palm_4", "Palm_5", "Palm_6"};
   	
   	// maker
   	visualization_msgs::MarkerArray marker_array;
 
-  	double tempPinky_1, tempPinky_2, tempRing_1, tempRing_2, tempMiddle_1, tempMiddle_2, tempIndex_1, tempIndex_2, tempThumb, tempPalm_1, tempPalm_2, tempPalm_3, tempPalm_4, tempPalm_5, tempPalm_6;
+  	double tempPinky_1, tempPinky_2, tempRing_1, tempRing_2, tempMiddle_1, tempMiddle_2, tempIndex_1, tempIndex_2, tempThumb, 
+  	       tempPalm_1, tempPalm_2, tempPalm_3, tempPalm_4, tempPalm_5, tempPalm_6;
 	double rgb[3];
-
 
 public:
 	HandVisualization();
 	~HandVisualization();
 	double sigmoid(double x, double gain=1.0, double offset_x=0.0);
 	double* convert2RGB(double &x, double (&rgb)[3]);
+	void Callback(const ros::MessageEvent<sensor_msgs::Temperature const>& event);
 	void tempValusesPinky_1Callback(const sensor_msgs::Temperature::ConstPtr& data);
-	/*
 	void tempValusesPinky_2Callback(const sensor_msgs::Temperature::ConstPtr& data);
 	void tempValusesRing_1Callback(const sensor_msgs::Temperature::ConstPtr& data);
 	void tempValusesRing_2Callback(const sensor_msgs::Temperature::ConstPtr& data);
@@ -44,12 +46,13 @@ public:
 	void tempValusesPalm_4Callback(const sensor_msgs::Temperature::ConstPtr& data);
 	void tempValusesPalm_5Callback(const sensor_msgs::Temperature::ConstPtr& data);
 	void tempValusesPalm_6Callback(const sensor_msgs::Temperature::ConstPtr& data);
-	*/
 	void timerCallback(const ros::TimerEvent&);
 	void visualizeImages(int n, std::string name);
 	ros::NodeHandle nh;
   	ros::Publisher marker_array_pub;
-	ros::Subscriber tempValue_sub;
+	ros::Subscriber tempValue_sub_1, tempValue_sub_2, tempValue_sub_3, tempValue_sub_4, tempValue_sub_5, 
+					tempValue_sub_6, tempValue_sub_7, tempValue_sub_8, tempValue_sub_9, tempValue_sub_10,
+					tempValue_sub_11, tempValue_sub_12, tempValue_sub_13, tempValue_sub_14, tempValue_sub_15;
 	ros::Timer timer;
 };
 
