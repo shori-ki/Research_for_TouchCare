@@ -97,7 +97,8 @@ if __name__ == '__main__':
     rospy.init_node("hand_controller", anonymous=True)
     try:
         node = handControllerNode()
-    except Exception as e:
-        rospy.logfatal("Caught exception: " + str(e))
-    else:
         node.run()
+    except Exception as e:
+        rospy.logfatal("Caught exception: " + str(e))        
+    finally:
+        print("Good bye")
