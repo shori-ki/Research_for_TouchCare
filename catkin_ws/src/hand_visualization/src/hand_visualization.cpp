@@ -23,7 +23,7 @@ HandVisualization::HandVisualization()
   tempValue_sub_15 = nh.subscribe("/tempValue/palm_6", 1000, &HandVisualization::tempValusesPalm_6Callback, this);
   
   // timer
-  timer = nh.createTimer(ros::Duration(0.01), &HandVisualization::timerCallback, this);
+  timer = nh.createTimer(ros::Duration(0.05), &HandVisualization::timerCallback, this);
 
   // maker initialization
   marker_array.markers.resize(15);
