@@ -39,7 +39,8 @@ $ roslaunch plot_graph plot_graph
 ```
 Also, you can revise the set point or PID gains and so on in handcontroller.launch.
 ### Demo
-![PWM_200Hz_0.5](https://akita.naist.jp/yuki-ki/research-for-touch-care/tree/imeges/images/200Hz-0.5.png)
+![精度検証](https://github.com/yuki-ki/Research_for_TouchCare/edit/master/images/Verification.png)
+![温度センサ可視化](https://github.com/yuki-ki/Research_for_TouchCare/edit/master/movies/sensor_on_rviz.mp4)
 
 ### References
 - [A/D converter](https://learn.adafruit.com/raspberry-pi-analog-to-digital-converters/mcp3008)
